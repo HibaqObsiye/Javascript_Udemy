@@ -59,3 +59,38 @@
 //     return `${firstName} retires in ${retirement} years `
 // }
 // console.log(yearsUntilRetirement(1991, 'james'))
+
+const friends = ['Michael', 'Steven', 'Peter']
+console.log(friends)
+
+const years = new Array(1991, 1984, 2008, 2020)
+
+console.log(friends)
+console.log(years[ years.length -1])
+
+friends[2] = "james"
+console.log(friends) //only primitive values are immutable
+
+const firstName = 'jonas'
+const jonas = [firstName,'Schmidt', friends]
+console.log(jonas)
+
+//Array basic operations
+//add elements:
+// friends.push('jay') //adds element to the end of the array but also the push function can return a value which is the length of the new array.
+const newLength = friends.push('jay')
+friends.unshift('Mary') //adds element to the beginning of the array
+console.log(friends);
+console.log(newLength)
+
+//remove elements:
+friends.pop() //removes the last element
+const popped = friends.pop() // this returns the removed element
+console.log(friends)
+console.log(popped)
+friends.shift() //removes first element of an array
+console.log(friends)
+
+console.log(friends.indexOf('Mary')) // indexOf returns index of element if element is non-existent you will get -1
+
+console.log(friends.includes('Steven')) //checks if it includes steven. If there, it will return true else false

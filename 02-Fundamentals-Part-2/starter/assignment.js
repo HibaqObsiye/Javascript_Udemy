@@ -25,3 +25,36 @@ const checkWinner = (name1, name2, team1, team2) => {
    return  team1Score > team2Score ? `${name1} is the winner` : `${name2} is the winner`
 }
 console.log(checkWinner('dolphin','Koala',[44,23, 71], [65, 54, 49]))
+
+//coding challenge
+
+const calculateTip = (total) => {
+    
+    if(total > 50 && total < 300){
+      const tip = (total / 10) + ((total/10) /2)
+      return tip
+    }
+  else{
+    tip = (total /10) * 2
+    return tip
+  }
+}
+
+const calculateTip = (total) => {
+    
+    if(total > 50 && total < 300){
+      const tip = (total / 10) + ((total/10) /2)
+      return tip
+    }
+  else{
+    tip = (total /10) * 2
+    return tip
+  }
+}
+
+const bill = (total) => {
+  let array = []
+  const newArray = total.map(number => calculateTip(number))
+  return newArray
+}
+console.log(bill([400,40,50]))
