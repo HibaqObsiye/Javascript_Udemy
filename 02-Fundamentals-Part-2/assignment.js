@@ -1,0 +1,3 @@
+const describePopulation = (country, population)=> {
+
+}
